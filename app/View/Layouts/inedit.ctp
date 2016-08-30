@@ -20,7 +20,7 @@
   <?php echo $this->fetch('script'); ?>
 
   <?php if ($currentUser): ?>
-    <?php echo $this->Html->css(array('accenture.css')) ?>
+    <?php echo $this->Html->css(array('pro/accenture.css')) ?>
   <?php endif; ?>
 
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic|Droid+Sans:400,700' rel='stylesheet' type='text/css'>
