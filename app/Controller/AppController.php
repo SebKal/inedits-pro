@@ -61,12 +61,7 @@ class AppController extends Controller {
       $this->set('firstVisit', true);
     }
     // Access Token
-    if ($this->Session->read('access_token_pro'))
-    {
-exit();
-      $this->Session->write('access_token_pro', true);
-      $this->redirect("/");
-    }else {
+    if (!$this->Session->read('access_token_pro')){
       $this->Session->write('access_token_pro', false);
       if (!$this->request->url == "begin") {
         $this->redirect(array('controller' => 'users', 'action' => 'begin'));
