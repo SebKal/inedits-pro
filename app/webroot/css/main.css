@@ -1922,3 +1922,21 @@ body.users-register {
     visibility: visible;
   }
 }
+
+/* =========================================================
+==Begin
+========================================================= */
+.access-box {
+  padding: 30px;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
