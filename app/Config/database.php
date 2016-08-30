@@ -78,16 +78,16 @@ class DATABASE_CONFIG {
           case 'localhost':
               $this->default = $this->dev;
               break;
-          case 'inedits.fr':
+          case 'pro.inedits.fr':
               $this->default = $this->prod;
               break;
-          case 'www.inedits.fr':
+          case 'pro.inedits.fr':
               $this->default = $this->prod;
               break;
-          case 'inedits.ovh':
+          case 'pro.inedits.ovh':
               $this->default = $this->preProd;
               break;
-          case 'www.inedits.ovh':
+          case 'pro.inedits.ovh':
               $this->default = $this->preProd;
               break;
           default :
