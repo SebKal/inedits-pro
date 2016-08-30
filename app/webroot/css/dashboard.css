@@ -1,0 +1,35 @@
+/* =========================================================
+==Global
+========================================================= */
+.btn + .btn {
+	margin-left: 0!important;
+}
+.alert {
+	position: relative;
+	z-index: 9999;
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: all 2.8s;
+	-moz-transition: all 2.8s;
+	-ms-transition: all 2.8s;
+	-o-transition: all 2.8s;
+	transition: all 2.8s;
+}
+
+.alert.cshide  {
+  visibility: hidden; opacity: 0;
+}
+
+/* =========================================================
+==Wysiswyg
+========================================================= */
+.note-editor { background-color: #fff; }
+.note-editor .note-color,
+.note-editor .note-fontname,
+.note-editor .note-help,
+.note-editor .note-insert,
+.note-editor .note-table,
+.note-editor .note-color,
+.note-editor .note-height { display: none; }
+
+.wysiwyg-input { display: none; }

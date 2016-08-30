@@ -1,0 +1,1 @@
+<?php echo $this->Html->image('design/header/home-logo.png', array('fullBase' => true, 'width' => 40, 'height' => 40, 'url' => array('controller' => 'contributions', 'action' => 'index', 'full_base' => true))); ?>
