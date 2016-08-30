@@ -68,7 +68,7 @@ exit();
       $this->redirect("/");
     }else {
       $this->set('access_token_pro', false);
-      if (!$this->request->url === "begin") {
+      if (!$this->request->url == "begin") {
         $this->redirect(array('controller' => 'users', 'action' => 'begin'));
       }
     }
