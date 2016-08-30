@@ -1,6 +1,7 @@
 <div class="container">
   <div class="access-box">
     <div class="access-box-content">
+      <h1 class="featurette-heading">Inédits Pro</h1>
       <?php echo $this->Form->create([], array('url' => array('controller' => 'users', 'action' => 'begin'))) ?>
         <?php echo $this->Form->input('access_token', array('class'=> 'form-control', 'div' => '', 'label' => '', 'placeholder' => '')); ?>
         <button class="btn btn-shadow-blue" type="submit">Se connecter</button>
