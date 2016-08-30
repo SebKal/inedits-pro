@@ -61,6 +61,18 @@ class AppController extends Controller {
       $this->set('firstVisit', true);
     }
 
+    // Access Token
+    if ($this->Session->read('access_token_pro'))
+    {
+      $this->set('access_token_pro', false);
+      $this->redirect("/");
+    }else {
+      $this->set('access_token_pro', true);
+      if (!$this->request->url === "begin") {
+        $this->redirect("/begin");
+      }
+    }
+
     // Le précieux Sésame
     if ($this->request->url == "sesamOuvresToi"){
       $this->Session->write('sesam', true);

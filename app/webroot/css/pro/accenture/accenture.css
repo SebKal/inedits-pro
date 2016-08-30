@@ -1,0 +1,84 @@
+/*Buton*/
+.btn-shadow-yellow {
+  background-color: #dd9933;
+  color: #fff;
+  border-radius:5px!important;
+  box-shadow: 0px 3px 0px #947514;
+}
+.btn-shadow-yellow:hover {
+  box-shadow: 0px 3px 0px #947514;
+}
+.btn-shadow-yellow:focus {
+  box-shadow: 0px 3px 0px #947514;
+}
+
+/*Footer*/
+footer .footer-header {
+  background-color:  #dd9933;
+  font-family: 'Droid Serif', serif;
+  font-size: 14px;
+  max-height: 114px;
+  padding: 1.5em 0;
+  position: relative;
+}
+
+footer .footer-header::after {
+  border-bottom: 57px solid transparent;
+  border-left: 26px solid #dd9933;
+  border-top: 57px solid transparent;
+  height: 0;
+  left: 50%;
+  position:absolute;
+  top: 0;
+  width: 0;
+}
+
+footer .footer-header .row div > p:first-child {
+  color: #dd9933;
+}
+
+/*Inputs*/
+.custom-input-file label {
+  background-color: #dd9933;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  height: 150px;
+  line-height: 1;
+  padding-top: 73px;
+  text-align: center;
+  width: 100%;
+  z-index: 9999;
+}
+
+#login .register-box {
+  color: #fff;
+  background-color: #dd9933;
+  padding: 9%;
+  text-align: center;
+}
+
+/*About*/
+.featurette .featurette-heading {
+  color: #dd9933;
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 27px;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.featurette .register .wrapper {
+  background-color: #dd9933;
+  padding-bottom: 35px;
+  padding-top: 30px;
+}
+
+#mailSubscribe .input-group button {
+  background-color: #dd9933;
+  border-radius: 5px!important;
+  color: #fff;
+  font-weight: bold;
+  margin-top: -0.3em;
+  padding: 1em 0.9em;
+}

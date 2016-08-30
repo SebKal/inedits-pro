@@ -37,7 +37,8 @@ class UsersController extends AppController {
       'index',
       'profile',
       'confirmRegister',
-      'forgetPassword'
+      'forgetPassword',
+      'begin'
     );
   }
 
@@ -572,6 +573,10 @@ class UsersController extends AppController {
       $this->Session->setFlash(__('Erreur requête'), 'alert-box', array('class'=>'alert-danger'));
       return $this->redirect(array('controller' => 'users', 'action' => 'login' ));
     }
+  }
+
+  public function begin() {
+    exit("coucou");
   }
 
   /**

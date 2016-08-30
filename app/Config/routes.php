@@ -214,6 +214,14 @@
     )
   );
 
+  Router::connect(
+    '/begin',
+    array(
+      'controller'  => 'users',
+      'action'      => 'begin'
+    )
+  );
+
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
