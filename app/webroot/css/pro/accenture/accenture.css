@@ -20,6 +20,9 @@ footer .footer-header::after {
 }
 
 @media (max-width: 1200px){
+  footer .footer-header {
+    background-color: #e8e8e8;
+  }
   footer .footer-header .row div > p:first-child {
     color: #91489f;
   }
