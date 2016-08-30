@@ -9,7 +9,7 @@
       </button>
       <div class="navbar-brand-container">
         <?php if ($currentUser): ?>
-          <?php echo $this->Html->image('design/header/logo-pro.svg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
+          <?php echo $this->Html->image('../css/pro/'.$currentUser['slug'].'/'.$currentUser['slug'].'.svg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
         <?php else: ?>
           <?php echo $this->Html->image('design/header/home-logo.png', array('class' => array('navbar-brand'), 'url' => '/')); ?>
         <?php endif ?>
