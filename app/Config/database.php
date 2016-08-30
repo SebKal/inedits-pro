@@ -126,7 +126,7 @@ class DATABASE_CONFIG {
     'login' => 'digitalmaster',
     'password' => 'nWt5^8d7',
     'database' => 'master_prod',
-    'prefix' => 'bake_',
+    'prefix' => 'pro_',
     'encoding' => 'utf8',
   );
 
