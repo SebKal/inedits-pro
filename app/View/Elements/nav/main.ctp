@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand-container">
-        <?php echo $this->Html->image('design/header/accenture.svg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
+        <?php echo $this->Html->image('design/header/logo-pro.svg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
       </div>
       <div class="layout">
         <?php if($currentUser) : ?>
