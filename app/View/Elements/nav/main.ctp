@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand-container">
-        <?php echo $this->Html->image('design/header/home-logo.jpg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
+        <?php echo $this->Html->image('design/header/accenture.svg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
       </div>
       <div class="layout">
         <?php if($currentUser) : ?>
@@ -50,12 +50,6 @@
         </li>
         <li class="<?php echo $bodyClass === 'users-index' ? 'active' : ''; ?>">
           <?php echo $this->Html->link('Les auteurs', array('controller' => 'users', 'action' => 'index')); ?>
-        </li>
-        <li>
-          <a href="http://editionsinedits.com" target="_blank">Nos éditions</a>
-        </li>
-        <li>
-          <a href="http://aide.inedits.fr">Aide</a>
         </li>
       </ul>
     </div>

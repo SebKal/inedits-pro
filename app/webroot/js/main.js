@@ -4,25 +4,6 @@ jQuery(document).ready(function($){
   Layout.init();            // init current layout
   ComponentsEditors.init(); //init WYSIWYG editor
 
-  // Logo Hover
-  (function(window){
-    var img   = $(".navbar-brand");
-    var li    = $(".accueil-li");
-
-    img.hover(function(){
-      $(this).attr('src', "/css/img/logo-hover.jpg");
-    }, function(){
-      $(this).attr('src', "/img/design/header/home-logo.jpg");
-    });
-
-    li.hover(function(){
-      img.attr('src', "/css/img/logo-hover.jpg");
-    }, function(){
-      img.attr('src', "/img/design/header/home-logo.jpg");
-    });
-
-  }(window));
-
   // LazyLoad
   (function(window){
 
