@@ -64,10 +64,10 @@ class AppController extends Controller {
     // Access Token
     if ($this->Session->read('access_token_pro'))
     {
-      $this->set('access_token_pro', false);
+      $this->set('access_token_pro', true);
       $this->redirect("/");
     }else {
-      $this->set('access_token_pro', true);
+      $this->set('access_token_pro', false);
       if (!$this->request->url === "begin") {
         $this->redirect("/begin");
       }
