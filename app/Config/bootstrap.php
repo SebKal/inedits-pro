@@ -120,7 +120,7 @@ if (isset($_SERVER['SERVER_NAME'])){
 
 	define('IS_PROD',($_SERVER['SERVER_NAME'] == 'inedits.fr' ) ? true : false);
 	define('IS_DEV',($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1' || $_SERVER['SERVER_NAME'] == 'inetree.dev' ) ? true : false);
-	define('IS_PRE_PROD',($_SERVER['SERVER_NAME'] == 'www.inedits.ovh' ) ? true : false);
+  define('IS_PRE_PROD',($_SERVER['SERVER_NAME'] == 'inedits.ovh' ) ? true : false);
 }
 
 // DEFINE MEDIA PATH
