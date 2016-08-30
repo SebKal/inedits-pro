@@ -1,20 +1,20 @@
 /*Buton*/
 .btn-shadow-yellow {
-  background-color: #dd9933;
+  background-color: #91489f;
   color: #fff;
   border-radius:5px!important;
-  box-shadow: 0px 3px 0px #947514;
+  box-shadow: 0px 3px 0px #6d3877;
 }
 .btn-shadow-yellow:hover {
-  box-shadow: 0px 3px 0px #947514;
+  box-shadow: 0px 3px 0px #6d3877;
 }
 .btn-shadow-yellow:focus {
-  box-shadow: 0px 3px 0px #947514;
+  box-shadow: 0px 3px 0px #6d3877;
 }
 
 /*Footer*/
 footer .footer-header {
-  background-color:  #dd9933;
+  background-color:  #91489f;
   font-family: 'Droid Serif', serif;
   font-size: 14px;
   max-height: 114px;
@@ -24,7 +24,7 @@ footer .footer-header {
 
 footer .footer-header::after {
   border-bottom: 57px solid transparent;
-  border-left: 26px solid #dd9933;
+  border-left: 26px solid #91489f;
   border-top: 57px solid transparent;
   height: 0;
   left: 50%;
@@ -34,12 +34,12 @@ footer .footer-header::after {
 }
 
 footer .footer-header .row div > p:first-child {
-  color: #dd9933;
+  color: #91489f;
 }
 
 /*Inputs*/
 .custom-input-file label {
-  background-color: #dd9933;
+  background-color: #91489f;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -54,14 +54,14 @@ footer .footer-header .row div > p:first-child {
 
 #login .register-box {
   color: #fff;
-  background-color: #dd9933;
+  background-color: #91489f;
   padding: 9%;
   text-align: center;
 }
 
 /*About*/
 .featurette .featurette-heading {
-  color: #dd9933;
+  color: #91489f;
   position: relative;
   margin-bottom: 1em;
   font-size: 27px;
@@ -69,13 +69,13 @@ footer .footer-header .row div > p:first-child {
 }
 
 .featurette .register .wrapper {
-  background-color: #dd9933;
+  background-color: #91489f;
   padding-bottom: 35px;
   padding-top: 30px;
 }
 
 #mailSubscribe .input-group button {
-  background-color: #dd9933;
+  background-color: #91489f;
   border-radius: 5px!important;
   color: #fff;
   font-weight: bold;
