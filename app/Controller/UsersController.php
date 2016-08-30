@@ -577,8 +577,7 @@ class UsersController extends AppController {
 
   public function begin() {
     if ($this->request->is('post')) {
-      var_dump($this->request);
-      if ($this->request->data['access_token'] === "ThisIsAMdp")
+      if ($this->request->data['User']['access_token'] === "ThisIsAMdp")
       {
         $this->set('access_token_pro', true);
         $this->redirect("/");
