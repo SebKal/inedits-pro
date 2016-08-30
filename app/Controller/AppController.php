@@ -60,7 +60,7 @@ class AppController extends Controller {
     }else {
       $this->set('firstVisit', true);
     }
-
+exit();
     // Access Token
     if ($this->Session->read('access_token_pro'))
     {
