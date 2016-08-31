@@ -29,14 +29,7 @@
 </head>
   <body class="<?php echo $bodyClass ? $bodyClass : ''; ?>">
     <header>
-      <?php if($firstVisit): ?>
-        <div class="alert alert-beta alert-info">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          Ce site est encore en développement. N’hésitez pas à nous faire savoir si vous rencontrez un bug. Merci de votre aide :)
-        </div>
-      <?php endif; ?>
+
       <?php echo $this->element('nav/main'); ?>
       <?php echo $this->fetch('cover') ?>
       <?php echo $this->Session->flash(); ?>
