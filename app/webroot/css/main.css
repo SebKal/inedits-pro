@@ -1926,6 +1926,7 @@ body.users-register {
 /* =========================================================
 ==Acess Token
 ========================================================= */
-body.users-begin .container {
+body.users-begin .login-box {
   max-width: 500px;
+  margin: 0 auto;
 }
