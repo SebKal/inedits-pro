@@ -1473,21 +1473,21 @@ body.users-index .results {
   color: #fff;
 }
 
-#login .login-box {
+.login-box {
   background-color:#fff;
   border: 1px solid #dddddd;
   border-radius: 3px!important;
 }
-#login .login-box .box-content {
+.login-box .box-content {
   padding: 8% 8% 0;
 }
-#login .login-box .box-footer {
+.login-box .box-footer {
   border-top: 1px solid #dddddd;
   margin-top: 1em;
   padding: 2% 1%;
   text-align: right;
 }
-#login .login-box .box-footer a {
+.login-box .box-footer a {
   line-height: 2.5;
   margin-right: 1em;
 }
@@ -1620,7 +1620,7 @@ body.users-register {
 
 @media (min-width: 1080px){
   #login .register-box,
-  #login .login-box {
+  .login-box {
     height: 256px;
   }
 }
@@ -1921,4 +1921,14 @@ body.users-register {
   .contact-modal-wrapper {
     visibility: visible;
   }
+}
+
+/* =========================================================
+==Acess Token
+========================================================= */
+body.users-begin .container {
+  max-width: 400px;
+}
+body.users-begin .container .access-box {
+  background-color: #fff;
 }
