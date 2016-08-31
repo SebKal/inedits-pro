@@ -1939,6 +1939,9 @@ body.users-begin .login-box {
   -ms-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
 }
+body.users-begin .login-box .box-content {
+  padding-bottom: 8%;
+}
 body.users-begin .login-box .btn {
   margin-top: 30px;
 }
