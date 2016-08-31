@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="access-box">
-    <div class="access-box-content">
+  <div class="login-box">
+    <div class="box-content">
       <h1 class="featurette-heading">Inédits Pro</h1>
       <p>
         La version pro de Inédits est en accès restreint, veuillez saisir votre code d'entrée :
