@@ -1927,6 +1927,18 @@ body.users-register {
 ==Acess Token
 ========================================================= */
 body.users-begin .login-box {
+  height: auto;
   max-width: 500px;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+body.users-begin .login-box .btn {
+  margin-bottom: 30px;
 }
