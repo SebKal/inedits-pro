@@ -1923,12 +1923,3 @@ body.users-register {
   }
 }
 
-/* =========================================================
-==Acess Token
-========================================================= */
-body.users-begin .container {
-  max-width: 400px;
-}
-body.users-begin .container .access-box {
-  background-color: #fff;
-}
