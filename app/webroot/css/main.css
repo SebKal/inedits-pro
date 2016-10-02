@@ -34,6 +34,10 @@ Global
   display: none;
 }
 
+body, html {
+  height: 100%;
+}
+
 /* =========================================================
 ==Alerts
 ========================================================= */
@@ -745,6 +749,28 @@ input.form-error {
 /*
 * Index
 */
+.contributions-index > header {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  background: url('img/home-header.jpg') center center no-repeat;
+  background-size: cover;
+}
+.contributions-index > header .home-cover  {
+  background: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.contributions-index > header .home-cover .btn {
+  margin: 15px;
+}
 .home-cover {
   background: url('img/home-header.jpg') center center no-repeat;
   background-size: cover;

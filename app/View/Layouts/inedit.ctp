@@ -49,7 +49,9 @@
 
       <?php echo $this->fetch('content'); ?>
 
-      <?php echo $this->element('footer/main') ?>
+      <?php if($currentUser) : ?>
+        <?php echo $this->element('footer/main') ?>
+      <?php endif; ?>
     </div>
 
     <div class="contact-modal-wrapper">

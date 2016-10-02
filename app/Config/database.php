@@ -72,7 +72,7 @@ class DATABASE_CONFIG {
     {
       if (isset($_SERVER['SERVER_NAME'])) {
         switch($_SERVER['SERVER_NAME']){
-          case 'inetree.dev':
+          case 'pro.inetree.dev':
               $this->default = $this->dev;
               break;
           case 'localhost':
@@ -113,8 +113,8 @@ class DATABASE_CONFIG {
     'persistent' => false,
     'host' => '127.0.0.1',
     'login' => 'root',
-    'password' => 'root',
-    'database' => 'scotchbox',
+    'password' => '',
+    'database' => 'inedits-cake',
     'prefix' => 'bake_',
     'encoding' => 'utf8',
   );

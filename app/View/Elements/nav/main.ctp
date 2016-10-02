@@ -49,12 +49,14 @@
         <li class="<?php echo $bodyClass === 'pages-comment_ca_marche' ? 'active' : ''; ?>">
           <?php echo $this->Html->link('Comment ça marche', array('controller' => 'pages', 'action' => 'comment_ca_marche')); ?>
         </li>
-        <li class="<?php echo $bodyClass === 'trees-index' ? 'active' : ''; ?>">
-          <?php echo $this->Html->link('Les arbres', array('controller' => 'trees', 'action' => 'index')); ?>
-        </li>
-        <li class="<?php echo $bodyClass === 'users-index' ? 'active' : ''; ?>">
-          <?php echo $this->Html->link('Les auteurs', array('controller' => 'users', 'action' => 'index')); ?>
-        </li>
+        <?php if ($currentUser): ?>
+          <li class="<?php echo $bodyClass === 'trees-index' ? 'active' : ''; ?>">
+            <?php echo $this->Html->link('Les arbres', array('controller' => 'trees', 'action' => 'index')); ?>
+          </li>
+          <li class="<?php echo $bodyClass === 'users-index' ? 'active' : ''; ?>">
+            <?php echo $this->Html->link('Les auteurs', array('controller' => 'users', 'action' => 'index')); ?>
+          </li>
+        <?php endif; ?>
       </ul>
     </div>
   </div>
