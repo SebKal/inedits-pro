@@ -129,18 +129,8 @@
     '/profile/:slug',
     array(
       'controller'  => 'users',
-      'action'      => 'profile'
-      ),
-    array(
-      'pass' => array('slug')
-    )
-  );
-  Router::connect(
-    '/profil/:slug/modifier',
-    array(
-      'controller'  => 'users',
       'action'      => 'edit'
-    ),
+      ),
     array(
       'pass' => array('slug')
     )

@@ -17,7 +17,7 @@
         'Profil',
         array(
           'controller'  => 'users',
-          'action'      => 'profile',
+          'action'      => 'edit',
           'slug'        => $currentUser['slug']
         )
       );

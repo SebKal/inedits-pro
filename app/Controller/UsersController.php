@@ -486,7 +486,7 @@ class UsersController extends AppController {
         if ($this->Auth->login()) {
             return $this->Auth->user('role_id') == 1 ?
             $this->redirect(array('controller' => 'users', 'action' => 'index', 'admin' => true)) :
-            $this->redirect(array('controller' => 'users', 'action' => 'profile', 'slug' => $this->Auth->user('slug'), 'admin' => false));
+            $this->redirect(array('controller' => 'users', 'action' => 'edit', 'slug' => $this->Auth->user('slug'), 'admin' => false));
         } else {
             $this->Session->setFlash(__('Mail ou mot de passe invalide'), 'alert-box', array('class'=>'alert-danger'));
         }
