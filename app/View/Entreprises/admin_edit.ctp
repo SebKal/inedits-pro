@@ -13,22 +13,9 @@
       <div class="row">
         <div class="col-lg-12 profile-content">
           <div class="row">
-            <div class="col-sm-3">
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="portlet light">
-                    <div class="portlet-body">
-                      <a data-toggle="modal" href="#addContribution" class="btn btn-block btn-primary">
-                      Ajouter <i class="fa fa-plus"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div class="col-md-12 col-sm-12 col-lg-9">
               <div class="row">
-                <div class="col-sm-12">
+                <div class="col-sm-6">
                   <div class="portlet light">
                     <div class="portlet-title">
                         <div class="caption">
@@ -40,6 +27,22 @@
 
                         <div class="form-group">
                             <?php echo $this->Form->input('name', array('value'=> $entreprise['Entreprise']['name'] ));?>
+                        </div>
+                        <button class="btn btn-block blue-hoki margin-top-10" type="submit">Modifier</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="portlet light">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <span class="caption-subject bold uppercase">Admin</span>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+
+                        <div class="form-group">
+                            <?php echo $this->Form->input('user_id', array('value'=> $entreprise['User']['id'] ));?>
                         </div>
                         <button class="btn btn-block blue-hoki margin-top-10" type="submit">Modifier</button>
                       <?php echo $this->Form->end();?>

@@ -67,7 +67,12 @@ class EntreprisesController extends AppController {
     }
 
     public function admin_edit($id = null) {
-
+        $this->set('users', $this->Entreprise->User->find('list', array(
+          'fields'      => array('User.id', 'User.slug'),
+          'conditions'  => array(
+            'User.role_id' => 1,
+          )
+        )));
         if($id && is_numeric($id)){
             if (!$this->Entreprise->exists($id)) {
                 throw new NotFoundException(__('Invalid contribution'));
