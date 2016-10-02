@@ -49,6 +49,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <?php echo $this->Form->input('entreprise_id', array('class'=> 'form-control', 'div' => '', 'label' => 'Entreprise'));?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="box">
                     <h4>Votre Profil <span class="bubble">3</span></h4>

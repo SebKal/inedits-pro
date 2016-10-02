@@ -11,10 +11,14 @@ class Entreprise extends AppModel {
   *
   */
 
-  public $hasMany = array(
-    'User'  => array(
-      'className'     => 'User',
-    )
+  public $belongsTo = array(
+    'User' => array(
+      'className' => 'User',
+      'foreignKey' => 'user_id',
+      'conditions' => '',
+      'fields' => '',
+      'order' => '',
+    ),
   );
 
   /*

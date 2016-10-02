@@ -172,6 +172,14 @@
     )
   );
   Router::connect(
+    '/admin/entreprises',
+    array(
+      'controller'  => 'entreprises',
+      'action'      => 'index',
+      'admin'       => true
+    )
+  );
+  Router::connect(
     '/admin/arbres',
     array(
       'controller'  => 'trees',

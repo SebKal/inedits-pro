@@ -36,6 +36,9 @@
           <li class="<?php echo $this->request->controller === 'trees' ? 'active' : ''; ?>">
             <?php echo $this->Html->link('Arbres', array('controller' => 'trees', 'action' => 'index')); ?>
           </li>
+          <li class="<?php echo $this->request->controller === 'trees' ? 'active' : ''; ?>">
+            <?php echo $this->Html->link('Entreprises', array('controller' => 'entreprises', 'action' => 'index')); ?>
+          </li>
         </ul>
       </li>
     </ul>
