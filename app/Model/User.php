@@ -25,7 +25,14 @@ class User extends AppModel {
       'conditions' => '',
       'fields' => '',
       'order' => '',
-    )
+    ),
+    'Entreprise' => array(
+      'className' => 'Entreprise',
+      'foreignKey' => 'entreprise_id',
+      'conditions' => '',
+      'fields' => '',
+      'order' => '',
+    ),
   );
 
   public $hasAndBelongsToMany = array(

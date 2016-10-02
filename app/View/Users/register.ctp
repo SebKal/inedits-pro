@@ -77,13 +77,6 @@
                         </div>
 
                         <div class="col-sm-12">
-                            <div class="form-group">
-                                <?php echo $this->Form->input('bio', array('class'=> 'form-control', 'div' => '', 'placeholder' => 'Biographie : parlez nous de vous en quelques mots'));?>
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-12">
                             <h4>Conditions générales d'utilisation <span class="bubble">4</span></h4>
                             <div class="charte">
                                 <p>

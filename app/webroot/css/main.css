@@ -749,6 +749,11 @@ input.form-error {
 /*
 * Index
 */
+.contributions-index .main-wrapper > footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 .contributions-index > header {
   position: relative;
   height: 100%;
