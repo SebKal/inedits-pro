@@ -10,7 +10,17 @@ class Tree extends AppModel {
         'Contribution' => array(
             'className' => 'Contribution',
             'conditions'    => array('Contribution.status' => 3)
-        ),
+        )
+    );
+
+    public $belongsTo = array(
+      'Entreprise' => array(
+        'className' => 'Entreprise',
+        'foreignKey' => 'entreprise_id',
+        'conditions' => '',
+        'fields' => '',
+        'order' => '',
+      ),
     );
 
     public function beforeSave($options = array()) {

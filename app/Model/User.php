@@ -15,6 +15,9 @@ class User extends AppModel {
   public $hasMany = array(
     'Contribution'  => array(
       'className'     => 'Contribution',
+    ),
+    'Entreprise'  => array(
+      'className'     => 'Entreprise',
     )
   );
 

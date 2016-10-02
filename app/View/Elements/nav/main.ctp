@@ -8,11 +8,11 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand-container">
-        <?php if ($currentUser): ?>
+<!--         <?php if ($currentUser): ?>
           <?php echo $this->Html->image('../css/pro/'.$currentUser['Entreprise']['slug'].'/'.$currentUser['Entreprise']['slug'].'.svg', array('class' => array('navbar-brand'), 'url' => '/')); ?>
-        <?php else: ?>
+        <?php else: ?> -->
           <?php echo $this->Html->image('design/header/home-logo.png', array('class' => array('navbar-brand'), 'url' => '/')); ?>
-        <?php endif ?>
+        <!-- <?php endif ?> -->
       </div>
       <div class="layout">
         <?php if($currentUser) : ?>

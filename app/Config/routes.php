@@ -136,7 +136,7 @@
     )
   );
   Router::connect(
-    '/profil/:slug/modifier/mot-de-passe',
+    '/profil/:slug/mot-de-passe',
     array(
       'controller'  => 'users',
       'action'      => 'changePass'

@@ -164,7 +164,8 @@ class AppController extends Controller {
     }else {
         $this->set('bodyClass', $this->request->params['controller'].'-'.$this->request->params['action']);
     }
-
+// debug($this->Auth->user());
+// exit();
     // Set global views data
     $this->set('currentUser', $this->Auth->user());
   }
