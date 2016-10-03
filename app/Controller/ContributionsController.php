@@ -233,8 +233,19 @@ class ContributionsController extends AppController {
     // ==ADMIN
 
     public function admin_index() {
-
+      if ($this->Auth->user()['role_id'] == 1){
         $this->set('trees', $this->Contribution->find('all'));
+      }
+      if ($this->Auth->user()['role_id'] == 4){
+        $this->set('trees', $this->Contribution->find('all', array(
+          'conditions'  => array(
+            'Entreprise.user_id' => $this->Auth->user()['id'],
+          ),
+          'recursive' => 2
+        )));
+      }
+
+      return true;
     }
 
     public function admin_add($treeSlug, $parentId, $userId) {

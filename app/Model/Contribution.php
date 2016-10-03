@@ -32,6 +32,13 @@ class Contribution extends AppModel {
       'counterScope' => array(
           'Contribution.status' => 3
       )
+    ),
+    'Entreprise' => array(
+      'className' => 'Entreprise',
+      'foreignKey' => 'entreprise_id',
+      'conditions' => '',
+      'fields' => '',
+      'order' => '',
     )
   );
 

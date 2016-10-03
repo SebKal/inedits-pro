@@ -134,7 +134,16 @@ class TreesController extends AppController {
         $this->Tree->recursive = 0;
 
         // Set Tree data
-        $trees      = $this->Tree->find('all');
+        if ($this->Auth->user()['role_id'] == 1){
+          $trees = $this->Tree->find('all');
+        }
+        if ($this->Auth->user()['role_id'] == 4){
+          $trees = $this->Tree->find('all', array(
+            'conditions'  => array(
+              'Tree.entreprise_id' => $this->Auth->user()['entreprise_id'],
+            )
+          ));
+        }
 
         for ($i=0 ; $i < count($trees) ; $i++) {
             $trees[$i]['Tree']['users'] = $this->Tree->Contribution->getTreeAuthors($trees[$i]['Tree']['id']);

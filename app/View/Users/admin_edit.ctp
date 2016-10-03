@@ -193,24 +193,26 @@
 						</div>
 					</div>
 					<div class="row">
-				    	<div class="col-lg-6">
-							<div class="portlet light">
-								<div class="portlet-title">
-		                            <div class="caption">
-		                                <i class="icon-cursor font-purple-intense hide"></i>
-		                                <span class="caption-subject bold uppercase">Role</span>
-		                            </div>
-		                        </div>
-								<div class="portlet-body">
-							    	<?php echo $this->Form->create('User', array( 'role' => 'form', 'inputDefaults' => array('div' => false, 'class' => 'form-control', 'label' => false))); ?>
-							    		<div class="form-group">
-							                <?php echo $this->Form->input('User.role_id', array('div' => '', 'type'=> 'select', 'options' => $roles));?>
-							            </div>
-							            <button class="btn btn-block blue-hoki" type="submit"> Modifier</button>
-									<?php echo $this->Form->end();?>
-								</div>
-							</div>
-				    	</div>
+              <?php if ($currentUser['role_id'] == 1): ?>
+  				    	<div class="col-lg-6">
+  							<div class="portlet light">
+  								<div class="portlet-title">
+  		                            <div class="caption">
+  		                                <i class="icon-cursor font-purple-intense hide"></i>
+  		                                <span class="caption-subject bold uppercase">Role</span>
+  		                            </div>
+  		                        </div>
+  								<div class="portlet-body">
+  							    	<?php echo $this->Form->create('User', array( 'role' => 'form', 'inputDefaults' => array('div' => false, 'class' => 'form-control', 'label' => false))); ?>
+  							    		<div class="form-group">
+  							                <?php echo $this->Form->input('User.role_id', array('div' => '', 'type'=> 'select', 'options' => $roles));?>
+  							            </div>
+  							            <button class="btn btn-block blue-hoki" type="submit"> Modifier</button>
+  									<?php echo $this->Form->end();?>
+  								</div>
+  							</div>
+  				    	</div>
+              <?php endif; ?>
 				    	<div class="col-lg-6">
 							<div class="portlet light">
 								<div class="portlet-title">
@@ -258,26 +260,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="portlet light">
-								<div class="portlet-title">
-		                            <div class="caption">
-		                                <i class="icon-cursor font-purple-intense hide"></i>
-		                                <span class="caption-subject bold uppercase">Biographie</span>
-		                            </div>
-		                        </div>
-								<div class="portlet-body">
-							    	<?php echo $this->Form->create('User', array( 'role' => 'form', 'inputDefaults' => array('div' => false, 'class' => 'form-control', 'label' => false))); ?>
-							    		<div class="form-group">
-							                <?php echo $this->Form->input('bio', array('div' => '', 'type'=> 'textarea'));?>
-							            </div>
-							            <button class="btn btn-block blue-hoki" type="submit"> Modifier</button>
-									<?php echo $this->Form->end();?>
-								</div>
-							</div>
-				    	</div>
 					</div>
 		        </div>
             </div>

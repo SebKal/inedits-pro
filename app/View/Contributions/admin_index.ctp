@@ -1,6 +1,10 @@
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
-<?php echo $this->element('dashboard/dashboard-sidebar'); ?>
+<?php if ($currentUser['role_id'] == 1): ?>
+  <?php echo $this->element('dashboard/dashboard-sidebar'); ?>
+<?php elseif ($currentUser['role_id'] == 4): ?>
+  <?php echo $this->element('dashboard/anime-sidebar'); ?>
+<?php endif; ?>
     <!-- BEGIN CONTENT -->
     <div class="page-content-wrapper">
         <div class="page-content">
@@ -121,10 +125,10 @@
                                     Titre
                                 </th>
                                 <th>
-                                    Arbre
+                                  Entreprise
                                 </th>
                                 <th>
-                                  Postée le
+                                    Arbre
                                 </th>
                                 <th>
                                     Status
@@ -143,9 +147,6 @@
                                     Arbre
                                 </th>
                                 <th>
-                                  Postée le
-                                </th>
-                                <th>
                                     Status
                                 </th>
                                 <th>
@@ -160,12 +161,10 @@
                                             <?php echo $tree['Contribution']['title']; ?>
                                         </td>
                                         <td>
-                                            <?php echo $tree['Tree']['title']; ?>
+                                            <?php echo $tree['Tree']['Entreprise']['name']; ?>
                                         </td>
-
                                         <td>
-                                            <span class="hide"><?php echo date('Y-m-d H:i', strtotime($tree['Contribution']['created'])); ?></span>
-                                            <?php echo date('d-m-Y H:i', strtotime($tree['Contribution']['created'])); ?>
+                                            <?php echo $tree['Tree']['title']; ?>
                                         </td>
                                         <td>
                                             <?php if ($tree['Contribution']['status'] == 1) : ?>

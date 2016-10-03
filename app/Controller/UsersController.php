@@ -363,8 +363,16 @@ class UsersController extends AppController {
   // ==ADMIN
 
   public function admin_index() {
-
-      $this->set('users', $this->paginate());
+      if ($this->Auth->user()['role_id'] == 1){
+        $this->set('users', $this->User->find('all'));
+      }
+      if ($this->Auth->user()['role_id'] == 4){
+        $this->set('users', $this->User->find('all', array(
+          'conditions'  => array(
+            'Entreprise.user_id' => $this->Auth->user()['id'],
+          )
+        )));
+      }
   }
 
   public function admin_edit($id = null) {

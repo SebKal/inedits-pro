@@ -84,8 +84,10 @@ class AppController extends Controller {
     }
 
     // Admin Lock
-    if ($this->params['admin'] && $this->Auth->user('role_id') != 1) {
-      $this->redirect($this->referer());
+    if ($this->params['admin']) {
+      if ($this->Auth->user('role_id') != 1 && $this->Auth->user('role_id') != 4) {
+        $this->redirect($this->referer());
+      }
     }
 
     // Alter layout if ajax
@@ -178,8 +180,10 @@ class AppController extends Controller {
 
   public function isAuthorized($user) {
     // Allow All for Admin
-    if (isset($user['role_id']) && $user['role_id'] == 1) {
-      return true;
+    if (isset($user['role_id'])) {
+      if ($user['role_id'] == 1 || $user['role_id'] == 4) {
+        return true;
+      }
     }
 
     $this->Session->setFlash(__('Accès non autorisé'), 'alert-box', array('class'=>'alert-danger'));
