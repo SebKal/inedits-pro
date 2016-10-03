@@ -253,10 +253,9 @@ section.container {
   margin-bottom: 1em;
 }
 
-/*.main-wrapper {
-  height: 100%;
+.main-wrapper {
   min-height: 100%;
-}*/
+}
 
 /* =========================================================
 ==Images
