@@ -68,7 +68,7 @@
                         array(
                           'controller'  => 'users',
                           'action'      => 'index',
-                          'admin'       => true,
+                          'admin'       => false,
                           'id'          => $key,
                         )
                       );
