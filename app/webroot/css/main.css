@@ -367,7 +367,7 @@ body.contributions-add .custom-wyz.custom-visible {
 }
 
 .nav-registration,
-.navbar .dropdown {
+.navbar div.dropdown {
   position: absolute;
   right: 15px;
   top: 9.5px;
