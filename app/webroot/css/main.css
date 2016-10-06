@@ -361,12 +361,12 @@ body.contributions-add .custom-wyz.custom-visible {
   font-style: uppercase; font-size: 14px;
   font-weight: bold;
 }
+.navbar li.dropdown .btn {
+  line-height: 46px;
+}
 .navbar .dropdown .dropdown-menu {
   border-radius: 5px!important;
   z-index: 9999;
-}
-.nabar li.dropdown {
-  line-height: 46px;
 }
 
 .nav-registration,
