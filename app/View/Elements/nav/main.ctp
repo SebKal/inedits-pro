@@ -54,7 +54,7 @@
             <?php echo $this->Html->link('Les arbres', array('controller' => 'trees', 'action' => 'index')); ?>
           </li>
           <?php if ($currentUser['role_id'] == 1 || $currentUser['role_id'] == 4): ?>
-            <div class="dropdown">
+            <li class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Les auteurs
                 <span class="caret"></span>
@@ -76,7 +76,7 @@
                   </li>
                 <?php endforeach; ?>
               </ul>
-            </div>
+            </li>
           <?php else: ?>
             <li class="<?php echo $bodyClass === 'users-index' ? 'active' : ''; ?>">
               <?php echo $this->Html->link('Les auteurs', array('controller' => 'users', 'action' => 'index', 'id' => $currentUser['entreprise_id'])); ?>
