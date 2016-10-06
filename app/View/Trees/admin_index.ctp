@@ -86,6 +86,7 @@
                         <?php echo $tree['Tree']['title']; ?>
                       </td>
                       <td>
+                        <?php var_dump($tree['Entreprise']['name']); ?>
                         <?php echo $tree['Entreprise']['name']; ?>
                       </td>
                       <td>
