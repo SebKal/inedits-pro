@@ -365,6 +365,9 @@ body.contributions-add .custom-wyz.custom-visible {
   border-radius: 5px!important;
   z-index: 9999;
 }
+.nabar li.dropdown {
+  line-height: 46px;
+}
 
 .nav-registration,
 .navbar div.dropdown {
