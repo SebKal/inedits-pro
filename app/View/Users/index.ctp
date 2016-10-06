@@ -8,18 +8,18 @@
   $this->end();
 ?>
 
-<?php if (isset($results) && count($results) == 0) : ?>
+<?php if (isset($users) && count($users) == 0) : ?>
   <section class="container-fluid results">
     <div class="container">
-      <p>Aucun résultat pour cette recherche.</p>
+      <p>Aucun utilisateur pour cette entreprise.</p>
     </div>
   </section>
-<?php elseif (isset($results) && count($results) > 0) : ?>
+<?php elseif (isset($users) && count($users) > 0) : ?>
 <section class="container-fluid results">
     <div class="container">
       <h4 class="title-section">Résultats</h4>
       <div class="row">
-        <?php foreach ($results as $value) : ?>
+        <?php foreach ($users as $value) : ?>
           <div class="col-lg-3">
             <div class="user-portlet">
               <div class="user-portlet-header">
@@ -58,11 +58,4 @@
     </div>
 </section>
 <?php endif; ?>
-
-<section class="container-fluid pop-user">
-  <div class="container">
-    <h4 class="title-section">Voir nos auteurs</h4>
-    <?php echo $this->element('users/best-users'); ?>
-  </div>
-</section>
 
