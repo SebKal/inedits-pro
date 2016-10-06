@@ -181,11 +181,12 @@ class Contribution extends AppModel {
     $this->create();
 
     $this->set(array(
-      'title'   => $tree['Tree']['title'],
-      'content' => $tree['Tree']['content'],
-      'user_id' => CakeSession::read("Auth.User.id")  ,
-      'tree_id' => $treeID,
-      'status'    => 3,
+      'title'         => $tree['Tree']['title'],
+      'content'       => $tree['Tree']['content'],
+      'user_id'       => CakeSession::read("Auth.User.id")  ,
+      'tree_id'       => $treeID,
+      'status'        => 3,
+      'entreprise_id' => $tree['Tree']['entreprise_id'],
     ));
 
     return $this->save();
