@@ -161,7 +161,7 @@
                                             <?php echo $tree['Contribution']['title']; ?>
                                         </td>
                                         <td>
-                                            <?php echo $tree['Tree']['Entreprise']['name']; ?>
+                                            <?php echo $tree['Contribution']['Entreprise']['name']; ?>
                                         </td>
                                         <td>
                                             <?php echo $tree['Tree']['title']; ?>
