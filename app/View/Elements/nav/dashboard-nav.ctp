@@ -336,7 +336,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-default">
                         <li>
-                            <?php echo $this->Html->link('<i class="icon-user"></i> Mon Profil', array('controller' => 'users', 'action' => 'profile', 'slug' => $currentUser['slug'], 'admin' => false), array('escape' => false)); ?>
+                            <?php echo $this->Html->link('<i class="icon-user"></i> Mon Profil', array('controller' => 'users', 'action' => 'edit', 'slug' => $currentUser['slug'], 'admin' => false), array('escape' => false)); ?>
                         </li>
                         <li>
                             <?php echo $this->Html->link('<i class="icon-key"></i> Déconnexion', array('controller' => 'users', 'action' => 'logout', 'admin' => false), array('escape' => false)); ?>
