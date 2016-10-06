@@ -19,7 +19,7 @@
   <?php echo $this->fetch('css'); ?>
   <?php echo $this->fetch('script'); ?>
 
-  <?php if ($currentUser): ?>
+  <?php if (isset($currentUser['Entrepise'])): ?>
     <?php echo $this->Html->css(array('pro/'.$currentUser['Entreprise']['slug'].'/'.$currentUser['Entreprise']['slug'].'.css')) ?>
   <?php endif; ?>
 
