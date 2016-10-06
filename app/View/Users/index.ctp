@@ -20,7 +20,7 @@
       <h4 class="title-section">Résultats</h4>
       <div class="row">
         <?php foreach ($users as $value) : ?>
-          <div class="col-lg-3">
+          <div class="col-xs-12 col-sm-3">
             <div class="user-portlet">
               <div class="user-portlet-header">
                 <?php if ($value['User']['cover']) : ?>
