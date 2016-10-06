@@ -167,18 +167,18 @@ class AppController extends Controller {
         $this->set('bodyClass', $this->request->params['controller'].'-'.$this->request->params['action']);
     }
 
-    if ($this->Auth->user()->role_id === 4)
+    if ($this->Auth->user()['role_id'] === 4)
     {
-      $this->set('entreprises', ClassRegistry::init('Contribution')->find('list', array(
+      $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name'),
         'conditions' => array(
-          'Entreprise.id' => $this->Auth->user()->entreprise_id
+          'Entreprise.id' => $this->Auth->user()['entreprise_id']
         )
       )));
     }
-    if ($this->Auth->user()->role_id === 1)
+    if ($this->Auth->user()['role_id'] === 1)
     {
-      $this->set('entreprises', ClassRegistry::init('Contribution')->find('list', array(
+      $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name')
       )));
     }
