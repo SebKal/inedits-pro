@@ -63,7 +63,7 @@
                       Titre
                     </th>
                     <th>
-                      Entrprise
+                      Entreprise
                     </th>
                     <th>
                       Contributions
@@ -85,8 +85,7 @@
                       <td>
                         <?php echo $tree['Tree']['title']; ?>
                       </td>
-                      <td>
-                        <?php var_dump($tree); ?>
+
                         <?php echo $tree['Entreprise']['name']; ?>
                       </td>
                       <td>
