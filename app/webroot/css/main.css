@@ -40,6 +40,9 @@ body {
 body.contributions-index {
   height: 100%;
 }
+body.users-begin .main-wrapper{
+  position:  static;
+}
 html {
   position: relative;
   min-height: 100%;
