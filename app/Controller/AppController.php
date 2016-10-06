@@ -168,7 +168,7 @@ class AppController extends Controller {
     }
 
     if ($this->Auth->user()['role_id'] === 4)
-    {
+    {exit('4');
       $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name'),
         'conditions' => array(
@@ -177,7 +177,7 @@ class AppController extends Controller {
       )));
     }
     if ($this->Auth->user()['role_id'] === 1)
-    {
+    {exit('1');
       $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name')
       )));
