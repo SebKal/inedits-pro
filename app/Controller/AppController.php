@@ -172,7 +172,7 @@ class AppController extends Controller {
       $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name'),
         'conditions' => array(
-          'Entreprise.id' => $this->Auth->user()['entreprise_id']
+          'Entreprise.user_id' => $this->Auth->user()['id']
         )
       )));
     }
