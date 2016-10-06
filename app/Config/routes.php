@@ -95,10 +95,13 @@
 
   // Users
   Router::connect(
-    '/auteurs',
+    '/auteurs/:id',
     array(
       'controller'  => 'users',
       'action'      => 'index'
+    ),
+    array(
+      'pass' => array('id')
     )
   );
   Router::connect(
