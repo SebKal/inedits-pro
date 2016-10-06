@@ -63,7 +63,7 @@
                       Titre
                     </th>
                     <th>
-                      Auteur
+                      Entrprise
                     </th>
                     <th>
                       Contributions
@@ -86,7 +86,7 @@
                         <?php echo $tree['Tree']['title']; ?>
                       </td>
                       <td>
-                        <?php echo $tree['Tree']['author']; ?>
+                        <?php echo $tree['Entreprise']['name']; ?>
                       </td>
                       <td>
                         <?php echo $tree['Tree']['contribution_count']; ?> </a>
