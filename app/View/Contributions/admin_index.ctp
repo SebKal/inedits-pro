@@ -3,7 +3,7 @@
 <?php if ($currentUser['role_id'] == 1): ?>
   <?php echo $this->element('dashboard/dashboard-sidebar'); ?>
 <?php elseif ($currentUser['role_id'] == 4): ?>
-  <?php echo $this->element('dashboard/anime-sidebar'); ?>
+  <?php echo $this->element('dashboard/dashboard-sidebar'); ?>
 <?php endif; ?>
     <!-- BEGIN CONTENT -->
     <div class="page-content-wrapper">
