@@ -70,9 +70,7 @@ class UsersController extends AppController {
 
     // Set Users data
     $this->set('users', $this->paginate(array(
-      'conditions'  => array(
-        'User.entreprise_id' => $id,
-      ),
+      'User.entreprise_id' => $id,
     )));
 
     // Set BestUsers data
