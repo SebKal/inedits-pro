@@ -1,4 +1,3 @@
-<?php var_dump($rootEntreprises) ?>
 <nav class="navbar navbar-static-top">
   <div class="container">
     <div class="navbar-header">
@@ -61,16 +60,16 @@
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <?php foreach ($rootEntreprises as $value): ?>
+                <?php foreach ($rootEntreprises as $key => $value): ?>
                   <li>
                     <?php
                       echo $this->Html->link(
-                        $value['name'],
+                        $value,
                         array(
                           'controller'  => 'users',
                           'action'      => 'index',
                           'admin'       => true,
-                          'id'          => $value['id'],
+                          'id'          => $key,
                         )
                       );
                     ?>
