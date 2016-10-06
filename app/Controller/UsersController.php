@@ -65,11 +65,15 @@ class UsersController extends AppController {
   }
 
   // ==BASICS
-  public function index($search=null) {
+  public function index($id) {
     $this->User->recursive = 0;
 
     // Set Users data
-    $this->set('users', $this->paginate());
+    $this->set('users', $this->paginate(array(
+      'conditions'  => array(
+        'User.entreprise_id' => $id,
+      ),
+    )));
 
     // Set BestUsers data
     $bestUsers = $this->User->getUserByPop();
