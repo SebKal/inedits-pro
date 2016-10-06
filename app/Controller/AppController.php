@@ -166,10 +166,9 @@ class AppController extends Controller {
     }else {
         $this->set('bodyClass', $this->request->params['controller'].'-'.$this->request->params['action']);
     }
-var_dump($this->Auth->user()['role_id']);
-exit('debug');
-    if ($this->Auth->user()['role_id'] === 4)
-    {exit('4');
+
+    if ($this->Auth->user()['role_id'] == 4)
+    {
       $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name'),
         'conditions' => array(
@@ -177,8 +176,8 @@ exit('debug');
         )
       )));
     }
-    if ($this->Auth->user()['role_id'] === 1)
-    {exit('1');
+    if ($this->Auth->user()['role_id'] == 1)
+    {
       $this->set('rootEntreprises', ClassRegistry::init('Contribution')->find('list', array(
         'fields' => array('Entreprise.id', 'Entreprise.name')
       )));
