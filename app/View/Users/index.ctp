@@ -4,7 +4,7 @@
 <!-- VIEW BLOCKS -->
 <?php
   $this->start('cover');
-    echo $this->element('users/index-cover');
+    echo $this->element('global/page-cover', array('title' => 'Les auteurs'));
   $this->end();
 ?>
 
