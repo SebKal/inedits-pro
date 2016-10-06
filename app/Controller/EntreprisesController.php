@@ -40,7 +40,7 @@ class EntreprisesController extends AppController {
           'fields'      => array('User.id', 'User.slug'),
           'conditions'  => array(
             'User.status' => 3,
-            'User.role_id'   => 1,
+            'User.role_id'   => 4,
           ),
         )));
     }
