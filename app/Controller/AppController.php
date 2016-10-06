@@ -166,8 +166,23 @@ class AppController extends Controller {
     }else {
         $this->set('bodyClass', $this->request->params['controller'].'-'.$this->request->params['action']);
     }
-// debug($this->Auth->user());
-// exit();
+
+    if ($this->Auth->user()->role_id === 4)
+    {
+      $this->set('entreprises', ClassRegistry::init('Contribution')->find('list', array(
+        'fields' => array('Entreprise.id', 'Entreprise.name'),
+        'conditions' => array(
+          'Entreprise.id' => $this->Auth->user()->entreprise_id
+        )
+      )));
+    }
+    if ($this->Auth->user()->role_id === 1)
+    {
+      $this->set('entreprises', ClassRegistry::init('Contribution')->find('list', array(
+        'fields' => array('Entreprise.id', 'Entreprise.name')
+      )));
+    }
+
     // Set global views data
     $this->set('currentUser', $this->Auth->user());
   }
