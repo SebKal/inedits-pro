@@ -33,6 +33,10 @@ class TreesController extends AppController {
             $trees[$i]['Tree']['users'] = $this->Tree->Contribution->getTreeAuthors($trees[$i]['Tree']['id']);
         }
 
+        $this->set('entreprises', $this->User->Entreprise->find('list', array(
+          'fields'      => array('Entreprise.id', 'Entreprise.name'),
+          'conditions'  => array('Entreprise.user_id' => $user['User']['id']),
+        )));
         $this->set('trees', $trees);
     }
 

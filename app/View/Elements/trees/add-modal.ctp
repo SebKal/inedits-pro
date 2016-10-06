@@ -17,6 +17,11 @@
                         <?php echo $this->Form->input('content', array('class' => 'wysiwyg-input'));?>
                     </div>
                 </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <?php echo $this->Form->input('entreprise_id');?>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modal-footer">

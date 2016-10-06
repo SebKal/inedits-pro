@@ -144,7 +144,7 @@ class UsersController extends AppController {
 
   public function register() {
     $this->set('entreprises', $this->User->Entreprise->find('list', array(
-      'fields'  => array('Entreprise.id', 'Entreprise.name'),
+      'fields' => array('Entreprise.id', 'Entreprise.name'),
     )));
     if (!empty($this->request->data) && $this->request->is('post')) {
 
