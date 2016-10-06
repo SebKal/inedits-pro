@@ -1,3 +1,4 @@
+<?php var_dump($rootEntreprises) ?>
 <nav class="navbar navbar-static-top">
   <div class="container">
     <div class="navbar-header">
