@@ -114,7 +114,9 @@
           Les Arbres d’INEDITS sont la propriété exclusive d’INEDITS. Sous peine de poursuites civiles et/ou pénales, il est interdit à quiconque de :
         </p>
         <ul>
-          représenter, reproduire, modifier, publier, adapter sur quelque support que ce soit, par quelque moyen que ce soit, l’ensemble des éléments présents sur le Site et les Services, en ce compris les Arbres d’INEDITS ;
+          <li>
+            représenter, reproduire, modifier, publier, adapter sur quelque support que ce soit, par quelque moyen que ce soit, l’ensemble des éléments présents sur le Site et les Services, en ce compris les Arbres d’INEDITS
+          </li>
           <li>procéder à une quelconque atteinte aux systèmes informatisés mis en œuvre pour la fourniture des Services (y incluant les Arbres d’INEDITS), en ce compris toute intrusion ou tentative d’intrusion</li>
           <li>procéder à une quelconque opération d’ingénierie inversée de tout ou parties des Services, en ce compris les Arbres d’INEDITS</li>
           <li> compiler, décompiler ou désassembler tout ou partie des Services, en ce compris les Arbres d’INEDITS</li>
