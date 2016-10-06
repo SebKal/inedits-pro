@@ -49,10 +49,10 @@
 
       <?php echo $this->fetch('content'); ?>
 
-      <?php if($currentUser) : ?>
-        <?php echo $this->element('footer/main') ?>
-      <?php endif; ?>
     </div>
+    <?php if($currentUser) : ?>
+      <?php echo $this->element('footer/main') ?>
+    <?php endif; ?>
 
     <div class="contact-modal-wrapper">
       <a id="contact-modal" data-toggle="modal" href="#contactModal" title="Nous contacter" alt="Contact Buton">Un problème, une erreur ?<i class="fa fa-info-circle"></i></a>
