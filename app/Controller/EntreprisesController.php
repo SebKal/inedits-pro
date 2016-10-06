@@ -70,7 +70,7 @@ class EntreprisesController extends AppController {
         $this->set('users', $this->Entreprise->User->find('list', array(
           'fields'      => array('User.id', 'User.slug'),
           'conditions'  => array(
-            'User.role_id' => 1,
+            'User.role_id' => 4,
           )
         )));
         if($id && is_numeric($id)){
