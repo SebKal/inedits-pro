@@ -4,7 +4,7 @@ var CoolTree = (function () {
 
     init: function() {
 
-      var rootUrl   = "https://"+document.location.hostname;
+      var rootUrl   = "http://"+document.location.hostname;
       var treeLink    = document.getElementById('getTreeLink');
       var labelJSON   = treeLink.baseURI+".json";
       var margin = {top: 0, right: 0, bottom: 0, left: 0},
@@ -204,11 +204,11 @@ var CoolTree = (function () {
       }
 
       function clickAddChild(d) {
-        window.location.href = "https://"+document.location.hostname+"/arbres/"+d.Tree.slug+"/ajouter/"+d.Contribution.id+"/"+d.Contribution.user_id;
+        window.location.href = "http://"+document.location.hostname+"/arbres/"+d.Tree.slug+"/ajouter/"+d.Contribution.id+"/"+d.Contribution.user_id;
       }
 
       function clickAddBrother(d) {
-        window.location.href = "https://"+document.location.hostname+"/arbres/"+d.Tree.slug+"/ajouter/"+d.parent.Contribution.id+"/"+d.Contribution.user_id;
+        window.location.href = "http://"+document.location.hostname+"/arbres/"+d.Tree.slug+"/ajouter/"+d.parent.Contribution.id+"/"+d.Contribution.user_id;
       }
 
       function clickShow(d) {

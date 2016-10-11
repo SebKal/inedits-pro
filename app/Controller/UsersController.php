@@ -13,7 +13,7 @@ class UsersController extends AppController {
 
     if( $this->action == 'register') {
       if ($this->Auth->user()) {
-        return $this->redirect(['controller' => 'users', 'action' => 'profile', $this->Auth->user('slug')]);
+        return $this->redirect(['controller' => 'users', 'action' => 'edit', $this->Auth->user('slug')]);
       }else {
 
       }
@@ -35,7 +35,6 @@ class UsersController extends AppController {
       'logout',
       'register',
       'index',
-      'profile',
       'confirmRegister',
       'forgetPassword',
       'begin'
@@ -579,7 +578,7 @@ class UsersController extends AppController {
       // Log User in
       $this->Auth->login($user['User']);
       $this->Session->setFlash(__('Bienvenue sur Inédits'), 'alert-box', array('class'=>'alert-success'));
-      return $this->redirect(array('controller' => 'users', 'action' => 'profile', 'slug' => $user['User']['slug'] ));
+      return $this->redirect(array('controller' => 'users', 'action' => 'edit', 'slug' => $user['User']['slug'] ));
     }
     else {
       $this->Session->setFlash(__('Erreur requête'), 'alert-box', array('class'=>'alert-danger'));
