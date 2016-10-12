@@ -33,23 +33,23 @@
   );
 
   // Trees
-  // Router::connect(
-  //   '/arbres',
-  //   array(
-  //     'controller'  => 'trees',
-  //     'action'      => 'index'
-  //   )
-  // );
   Router::connect(
-    '/arbres/entreprise/:id',
+    '/arbres',
     array(
       'controller'  => 'trees',
       'action'      => 'index'
-    ),
-    array(
-      'pass' => array('id')
     )
   );
+  // Router::connect(
+  //   '/arbres/entreprise/:id',
+  //   array(
+  //     'controller'  => 'trees',
+  //     'action'      => 'index'
+  //   ),
+  //   array(
+  //     'pass' => array('id')
+  //   )
+  // );
   Router::connect(
     '/arbres/:slug',
     array(
