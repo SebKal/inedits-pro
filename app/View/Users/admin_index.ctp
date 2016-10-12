@@ -91,7 +91,7 @@
                                      Nom
                                 </th>
                                 <th>
-                                     Prénom
+                                     Entreprise
                                 </th>
                                 <th>
                                      Mail
@@ -117,10 +117,10 @@
                                             <input type="checkbox" class="checkboxes" value="<?php echo $user['User']['id']; ?>"/>
                                         </td> -->
                                         <td>
-                                            <?php echo $user['User']['last_name']; ?>
+                                            <?php echo $user['User']['last_name']; ?> - <?php echo $user['User']['name']; ?>
                                         </td>
                                         <td>
-                                            <?php echo $user['User']['name']; ?>
+                                            <?php echo $user['Entreprise']['name']; ?>
                                         </td>
                                         <td>
                                             <?php echo $user['User']['mail']; ?>
