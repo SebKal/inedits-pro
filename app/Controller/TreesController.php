@@ -146,7 +146,7 @@ class TreesController extends AppController {
         if ($this->Auth->user()['role_id'] == 4){
           $trees = $this->Tree->find('all', array(
             'conditions'  => array(
-              'Tree.entreprise_id' => $this->Auth->user()['entreprise_id'],
+              'Entreprise.user_id' => 7,
             )
           ));
         }
