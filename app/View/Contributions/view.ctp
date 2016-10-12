@@ -105,7 +105,7 @@
           <div class="contrib-user">
             <p>Contribution de</p>
             <h3><?php echo $contribution['User']['name'].' '. $contribution['User']['last_name']; ?></h3>
-            <?php echo $this->Html->link('Voir son profil', array('controller' => 'users', 'action' => 'profile', 'slug' => $contribution['User']['slug']), array('class' => 'btn btn-block')); ?>
+            <?php echo $this->Html->link('Voir son profil', array('controller' => 'users', 'action' => 'edit', 'slug' => $contribution['User']['slug']), array('class' => 'btn btn-block')); ?>
           </div>
           <div class="contrib-call">
             <h3>Cette histoire vous inspire ?</h3>
