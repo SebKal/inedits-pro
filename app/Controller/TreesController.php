@@ -21,9 +21,9 @@ class TreesController extends AppController {
         $this->Paginator->settings = array(
           'conditions' => array(
             'Tree.entreprise_id' => $user['Entreprise']['id'],
-            'recursive' => 1
           ),
-          'limit' => 10
+          'recursive' => 1,
+          'limit' => 10,
         );
 
         // Set Tree data
