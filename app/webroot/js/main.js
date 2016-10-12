@@ -157,17 +157,6 @@ jQuery(document).ready(function($){
     $('#ContributionAddForm').submit(function(e){
       text    = $('.note-editable p');
       lettersCount = text.text().length;
-      // if (lettersCount > 7000 && lettersCount !== 0){
-      //   alertContent.html('Le contenu contient trop de caractères');
-      //   alert.removeClass('hide');
-      //   setTimeout(function() {alert.addClass('hide');}, 3000);
-      //   return false;
-      // }else if (lettersCount < 3000 && lettersCount !== 0) {
-      //   alertContent.html('Le contenu contient trop peu de caractères');
-      //   alert.removeClass('hide');
-      //   setTimeout(function() {alert.addClass('hide');}, 3000);
-      //   return false;
-      // }
     });
 
   }(window));
