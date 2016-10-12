@@ -34,13 +34,6 @@
 
   // Trees
   Router::connect(
-    '/arbres',
-    array(
-      'controller'  => 'trees',
-      'action'      => 'index'
-    )
-  );
-  Router::connect(
     '/arbres/entreprise/:id',
     array(
       'controller'  => 'trees',
