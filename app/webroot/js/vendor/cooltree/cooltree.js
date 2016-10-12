@@ -212,7 +212,7 @@ var CoolTree = (function () {
       }
 
       function clickShow(d) {
-        window.location.href = "https://"+document.location.hostname+"/arbres/"+d.Tree.slug+"/contribution/"+d.Contribution.slug;
+        window.location.href = "http://"+document.location.hostname+"/arbres/"+d.Tree.slug+"/contribution/"+d.Contribution.slug;
       }
 
       // Hover Bubble
