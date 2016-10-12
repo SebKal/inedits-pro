@@ -34,7 +34,6 @@ class EntreprisesController extends AppController {
     // ==ADMIN
 
     public function admin_index() {
-
         $this->set('entreprises', $this->Entreprise->find('all'));
         $this->set('users', $this->Entreprise->User->find('list', array(
           'fields'      => array('User.id', 'User.slug'),

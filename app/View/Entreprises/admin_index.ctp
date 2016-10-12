@@ -118,4 +118,4 @@
 </div>
 <!-- END CONTAINER -->
 
-<?php echo $this->element('Entreprises/add-modal'); ?>
+<?php echo $this->element('entreprises/add-modal'); ?>
