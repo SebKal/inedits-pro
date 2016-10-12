@@ -42,7 +42,7 @@
     </header>
 
       <?php if($bodyClass === 'trees-index') : ?>
-        <div class="main-wrapper lazy <?php echo $bodyClass ? $bodyClass : ''; ?>" data-original="css/img/arbre.jpg" style="background: url('css/img/arbre.jpg') center -50px no-repeat #eee; background-size: 2564px 424px;">
+        <div class="main-wrapper lazy <?php echo $bodyClass ? $bodyClass : ''; ?>" data-original="css/img/arbre.jpg" style="background: url('../../css/img/arbre.jpg') center -50px no-repeat #eee; background-size: 2564px 424px;">
       <?php else : ?>
         <div class="main-wrapper">
       <?php endif; ?>
