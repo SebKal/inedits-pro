@@ -34,7 +34,7 @@ class TreesController extends AppController {
 
         // Set Tree data
         $trees      = $this->paginate();
-
+debug($trees);
         for ($i=0 ; $i < count($trees) ; $i++) {
             $trees[$i]['Tree']['users'] = $this->Tree->Contribution->getTreeAuthors($trees[$i]['Tree']['id']);
         }
