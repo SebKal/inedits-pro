@@ -149,7 +149,7 @@ class TreesController extends AppController {
             $trees[$i]['Tree']['users'] = $this->Tree->Contribution->getTreeAuthors($trees[$i]['Tree']['id']);
         }
 
-        if ($user['User']['role_id'] === 4)
+        if ($this->Auth->user()['role_id'] == 4)
         {
           $this->set('entreprises', $this->Tree->Entreprise->find('list', array(
             'fields'      => array('Entreprise.id', 'Entreprise.name'),
