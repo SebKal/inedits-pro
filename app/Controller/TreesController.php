@@ -14,10 +14,16 @@ class TreesController extends AppController {
     }
 
     // ==BASICS
-    public function index($id) {
+    public function index($id=null) {
         $this->Tree->recursive = 0;
         $this->set('layoutFooter', 'footer/main');
         $user = $this->Auth->user();
+
+        if (!$id && $user['role_id'] != 1)
+        {
+          $this->redirect('/');
+        }
+        $this->Session->setFlash(__('Une erreur est survenue. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
 
         $this->Paginator->settings = array(
           'conditions' => array(
