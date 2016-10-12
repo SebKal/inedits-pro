@@ -131,7 +131,7 @@ class ContributionsController extends AppController {
           $this->request->data['Contribution']['user_id']   = $userId;
           $this->request->data['Contribution']['tree_id']   = $tree['Tree']['id'];
           $this->request->data['Contribution']['parent_id'] = $parentId;
-          $this->request->data['Contribution']['entreprise_id'] = $this->Auth()->user()['entreprise_id'];
+          $this->request->data['Contribution']['entreprise_id'] = $this->Auth->user()['entreprise_id'];
           $this->request->data['Contribution']['role_id'] = 3;
 
           $this->Contribution->create();
