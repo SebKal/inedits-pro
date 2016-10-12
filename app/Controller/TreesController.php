@@ -14,17 +14,23 @@ class TreesController extends AppController {
     }
 
     // ==BASICS
-    public function index() {
+    public function index($id=null) {
         $this->Tree->recursive = 0;
         $this->set('layoutFooter', 'footer/main');
         $user = $this->Auth->user();
 
-          $this->Paginator->settings = array(
-            'conditions' => array(
-              'Tree.entreprise_id' => $user['entreprise_id'],
-            ),
-            'limit' => 10
-          );
+        if (!$id)
+        {
+          $this->redirect('/');
+          $this->Session->setFlash(__('Une erreur est survenue. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
+        }
+
+        $this->Paginator->settings = array(
+          'conditions' => array(
+            'Tree.entreprise_id' => $id,
+          ),
+          'limit' => 10
+        );
 
         // Set Tree data
         $trees      = $this->paginate();
