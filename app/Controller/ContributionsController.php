@@ -243,6 +243,10 @@ class ContributionsController extends AppController {
           ),
           'recursive' => 2
         )));
+        $this->set('entreprises', $this->Tree->Entreprise->find('list', array(
+          'fields'      => array('Entreprise.id', 'Entreprise.name'),
+          'conditions'  => array('Entreprise.user_id' => $this->Auth->user()['id']),
+        )));
       }
 
       return true;
