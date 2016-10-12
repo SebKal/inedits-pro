@@ -15,10 +15,11 @@ class TreesController extends AppController {
 
     // ==BASICS
     public function index() {
-        $this->Tree->recursive = 1;
+        $this->Tree->recursive = 0;
         $this->set('layoutFooter', 'footer/main');
         $user = $this->Auth->user();
-
+debug($user);
+exit();
         $this->Paginator->settings = array(
           'conditions' => array(
             'Tree.entreprise_id' => $user['Entreprise']['id'],
