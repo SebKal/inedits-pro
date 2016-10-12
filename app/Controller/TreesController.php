@@ -15,6 +15,7 @@ class TreesController extends AppController {
 
     // ==BASICS
     public function index() {
+        $this->Tree->recursive = 1;
         $this->set('layoutFooter', 'footer/main');
         $user = $this->Auth->user();
 
@@ -22,8 +23,7 @@ class TreesController extends AppController {
           'conditions' => array(
             'Tree.entreprise_id' => $user['Entreprise']['id'],
           ),
-          'recursive' => 2,
-          'limit' => 10,
+          'limit' => 10
         );
 
         // Set Tree data
