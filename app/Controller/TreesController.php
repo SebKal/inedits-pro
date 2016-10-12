@@ -26,9 +26,6 @@ class TreesController extends AppController {
         }
 
         $this->Paginator->settings = array(
-          'conditions' => array(
-            'Tree.entreprise_id' => $id,
-          ),
           'limit' => 10
         );
 
