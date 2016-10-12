@@ -22,7 +22,7 @@ class TreesController extends AppController {
           'conditions' => array(
             'Tree.entreprise_id' => $user['Entreprise']['id'],
           ),
-          'recursive' => 1,
+          'recursive' => 2,
           'limit' => 10,
         );
 
