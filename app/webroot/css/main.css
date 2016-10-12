@@ -34,12 +34,12 @@ Global
   display: none;
 }
 
-body {
+/*body {
   min-height: 100%;
 }
 body.contributions-index {
   height: 100%;
-}
+}*/
 body.users-begin .main-wrapper{
   position:  static;
 }

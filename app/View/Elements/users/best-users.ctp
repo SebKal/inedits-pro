@@ -74,9 +74,9 @@
           <span>Nouvelles éditées : </span>
           <span><b><?php echo $user['User']['contribution_count']; ?></b></span>
         </div>
-        <div class="user-portlet-footer">
+<!--         <div class="user-portlet-footer">
           <?php echo $this->Html->link('Voir son profil', array('controller' => 'users', 'action' => 'profile', 'slug' => $user['User']['slug']), array('class' => 'btn btn-portlet')) ?>
-        </div>
+        </div> -->
       </div>
     </div>
   <?php endforeach; ?>

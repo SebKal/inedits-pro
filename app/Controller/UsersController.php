@@ -76,17 +76,6 @@ class UsersController extends AppController {
     $bestUsers = $this->User->getUserByPop();
     $this->set('bestUsers', $bestUsers);
 
-    if ($this->request->isAjax()) {
-      $results = $this->User->searchUsers($this->request->query['search']);
-      $this->set(compact('results'));
-      $this->render('json/index');
-    }
-    if ($this->request->is('post')) {
-      $search = trim(strtolower($this->request->data['User']['search']));
-      $results = $this->User->searchusers($search);
-      $this->set(compact('results'));
-    }
-
   }
 
   // ==CRUD
