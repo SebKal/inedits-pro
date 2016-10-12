@@ -37,6 +37,7 @@
               </div>
               <div class="user-portlet-content">
                 <h4 style="text-transform: capitalize;"><?php echo $value['User']['name'].' '.$this->Text->truncate($value['User']['last_name'], 1, array('ellipsis' => '')).'.'; ?></h4>
+              </div>
               <div class="user-portlet-addon">
                 <span>Branches écrites : </span>
                 <span><b><?php echo $value['User']['contribution_count']; ?></b></span>
