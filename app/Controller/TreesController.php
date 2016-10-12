@@ -153,7 +153,7 @@ class TreesController extends AppController {
         {
           $this->set('entreprises', $this->Tree->Entreprise->find('list', array(
             'fields'      => array('Entreprise.id', 'Entreprise.name'),
-            'conditions'  => array('Entreprise.user_id' => $user['User']['id']),
+            'conditions'  => array('Entreprise.user_id' => $this->Auth->user()['id']),
           )));
         }
         else
