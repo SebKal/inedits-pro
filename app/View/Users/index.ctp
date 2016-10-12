@@ -17,7 +17,6 @@
 <?php elseif (isset($users) && count($users) > 0) : ?>
 <section class="container-fluid results">
     <div class="container">
-      <h4 class="title-section">Résultats</h4>
       <div class="row">
         <?php foreach ($users as $value) : ?>
           <div class="col-xs-12 col-sm-3">
