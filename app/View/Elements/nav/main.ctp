@@ -50,9 +50,36 @@
           <?php echo $this->Html->link('Comment ça marche', array('controller' => 'pages', 'action' => 'comment_ca_marche')); ?>
         </li>
         <?php if ($currentUser): ?>
-          <li class="<?php echo $bodyClass === 'trees-index' ? 'active' : ''; ?>">
-            <?php echo $this->Html->link('Les arbres', array('controller' => 'trees', 'action' => 'index')); ?>
-          </li>
+          <?php if ($currentUser['role_id'] == 1 || $currentUser['role_id'] == 4): ?>
+            <li class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Les arbres
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <?php foreach ($rootEntreprises as $key => $value): ?>
+                  <li>
+                    <?php
+                      echo $this->Html->link(
+                        $value,
+                        array(
+                          'controller'  => 'trees',
+                          'action'      => 'index',
+                          'admin'       => false,
+                          'id'          => $key,
+                        )
+                      );
+                    ?>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            </li>
+          <?php else: ?>
+            <li class="<?php echo $bodyClass === 'users-index' ? 'active' : ''; ?>">
+              <?php echo $this->Html->link('Les arbres', array('controller' => 'trees', 'action' => 'index', 'id' => $currentUser['entreprise_id'])); ?>
+            </li>
+          <?php endif; ?>
+
           <?php if ($currentUser['role_id'] == 1 || $currentUser['role_id'] == 4): ?>
             <li class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

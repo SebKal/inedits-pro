@@ -34,10 +34,13 @@
 
   // Trees
   Router::connect(
-    '/arbres',
+    '/arbres/:id',
     array(
       'controller'  => 'trees',
       'action'      => 'index'
+    ),
+    array(
+      'pass' => array('id')
     )
   );
   Router::connect(
