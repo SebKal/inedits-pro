@@ -41,7 +41,7 @@
     )
   );
   Router::connect(
-    '/arbres/:id',
+    '/arbres/entreprise/:id',
     array(
       'controller'  => 'trees',
       'action'      => 'index'
