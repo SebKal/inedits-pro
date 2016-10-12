@@ -22,8 +22,8 @@ class TreesController extends AppController {
         if (!$id && $user['role_id'] != 1)
         {
           $this->redirect('/');
+          $this->Session->setFlash(__('Une erreur est survenue. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
         }
-        $this->Session->setFlash(__('Une erreur est survenue. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
 
         $this->Paginator->settings = array(
           'conditions' => array(
