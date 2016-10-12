@@ -33,13 +33,13 @@
   );
 
   // Trees
-  // Router::connect(
-  //   '/arbres',
-  //   array(
-  //     'controller'  => 'trees',
-  //     'action'      => 'index'
-  //   )
-  // );
+  Router::connect(
+    '/arbres',
+    array(
+      'controller'  => 'trees',
+      'action'      => 'index'
+    )
+  );
   Router::connect(
     '/test/entreprise/:id',
     array(
