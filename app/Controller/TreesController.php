@@ -19,16 +19,16 @@ class TreesController extends AppController {
         $this->set('layoutFooter', 'footer/main');
         $user = $this->Auth->user();
 
-        // if (!$id && $user['role_id'] != 1)
-        // {
-        //   $this->redirect('/');
-        //   $this->Session->setFlash(__('Une erreur est survenue. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
-        // }
+        if (!$id && $user['role_id'] != 1)
+        {
+          $this->redirect('/');
+          $this->Session->setFlash(__('Une erreur est survenue. Merci de réessayer.'), 'alert-box', array('class'=>'alert-danger'));
+        }
 
         $this->Paginator->settings = array(
-          // 'conditions' => array(
-          //   'Tree.entreprise_id' => $user['entreprise_id'],
-          // ),
+          'conditions' => array(
+            'Tree.entreprise_id' => $id,
+          ),
           'limit' => 10
         );
 
