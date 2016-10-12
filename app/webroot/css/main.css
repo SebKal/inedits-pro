@@ -34,10 +34,10 @@ Global
   display: none;
 }
 
-/*body {
+body {
   min-height: 100%;
 }
-body.contributions-index {
+/*body.contributions-index {
   height: 100%;
 }*/
 body.users-begin .main-wrapper{
@@ -46,7 +46,6 @@ body.users-begin .main-wrapper{
 html {
   position: relative;
   min-height: 100%;
-  height: 100%;
 }
 
 /* =========================================================
