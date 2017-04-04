@@ -129,7 +129,7 @@ define('DEFAULT_COVER', 'covers'. DS .'default'. DS .'cover-1.jpg');
 
 // DEFINE ADMIN DATA
 define('ADMIN_EMAIL', 'clemence@inedits.fr');
-define('EMAIL_PASSWORD', '7kPt4m&4');
+define('EMAIL_PASSWORD', 'iMYuWAui');
 define('CONTRIB_EMAIL', 'contributions@inedits.fr');
 define('AUTHOR_EMAIL', 'auteurs_talentueux@inedits.fr');
 define('REPORT_ABUSE_EMAIL', 'abus@inedits.fr');
