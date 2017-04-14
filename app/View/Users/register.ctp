@@ -84,52 +84,6 @@
                         </div>
 
                         <div class="col-sm-12">
-                            <h4>Conditions générales d'utilisation <span class="bubble">4</span></h4>
-                            <div class="charte">
-                                <p>
-                                    Tous les textes proposés par les abonnés sont  soumis à validation par l’éditeur
-                                    avant leur publication en ligne. L’éditeur prendra en compte la qualité littéraire des
-                                    contenus proposés comme leur pertinence dans le suivi de l’arborescence.
-                                </p>
-                                <p>
-                                    Les contenus doivent  être conformes aux lois, ne pas être contraires aux bonnes
-                                    mœurs, à l'ordre public, aux réglementations en vigueur, et être libres de tout droit.
-                                    <br/>Seront donc refusés :
-                                </p>
-                                <ul>
-                                    <li>Les textes déjà soumis à un droit d’auteur.</li>
-
-                                    <li>les contenus contrevenant aux lois, à caractère diffamatoire, injurieux, </li>
-                                    obscène ou offensant ;
-
-                                    <li>la violence verbale ou faisant l'apologie du racisme et de la xénophobie, de </li>
-                                    l'homophobie, du révisionnisme ou du négationnisme ;
-
-                                    <li>les contenus à caractère pornographique ou pédophile ; </li>
-
-                                    <li>la divulgation d'informations permettant l'identification nominative et précise de </li>
-                                    toute personne privée telles que le nom de famille, l'adresse postale, l'adresse
-                                    électronique, le numéro de téléphone ; 
-
-                                    <li>le détournement du site pour faire de la propagande ou du prosélytisme à des </li>
-                                    fins professionnelles, commerciales, politiques, religieuses ou sectaires.
-                                </ul>
-                                <p>
-                                    Chaque contribution devra porter un titre qui l’identifie.
-                                    Les  participants recevront  un mail les informant de la décision  de l’éditeur
-                                    concernant leurs contributions. Trois réponses seront possibles : refusé, accepté, à
-                                    corriger (dans ce cas les éléments à modifier seront précisés)
-                                    Notre site  offre une vitrine de qualité aux auteurs, en conséquence l’auteur ne
-                                    pourra se prévaloir de droits d’auteurs pour ses contributions en ligne. En revanche,
-                                    si l’éditeur décide de publier une histoire aboutie sous la forme d’un recueil collectif
-                                    ou individuel, imprimé et /ou numérique,  un contrat à compte d’éditeur standard (sur
-                                    le modèle de celui que recommande la SGDL) sera conclu entre les différentes
-                                    parties.
-                                </p>
-                            </div>
-                            <div class="form-group">
-                                <?php echo $this->Form->input('conditions', array('class'=> 'form-control', 'id' => 'check-charte', 'type' => 'checkbox', 'label' => 'j\'ai lu et j\'accepte les conditions générales d\'utilisation')); ?>
-                            </div>
                             <button class="btn btn-shadow-yellow register-btn" disabled>S'inscrire</button>
                         </div>
                         <span class="last-bubble">></span>
