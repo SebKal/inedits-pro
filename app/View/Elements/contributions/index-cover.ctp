@@ -1,7 +1,7 @@
 <div class="home-cover">
   <h1>Ecriture collaborative</h1>
   <p>
-    BIENVENUE SUR NOTRE PLATEFORME D’ÉCRITURE COLLABORATIVE
+    BIENVENUE SUR VOTRE ESPACE DÉDIÉ
   </p>
   <?php if ($currentUser) : ?>
     <?php echo $this->Html->link('Commencer<i class="fa fa-chevron-right"></i>', array('controller' => 'trees', 'action' => 'index'), array('class' => 'btn btn-shadow-yellow', 'escape' => false));?>

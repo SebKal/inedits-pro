@@ -578,7 +578,7 @@ class UsersController extends AppController {
   public function begin() {
     $this->layout = "begin";
     if ($this->request->is('post')) {
-      if ($this->request->data['User']['access_token'] === "PRO2016")
+      if ($this->request->data['User']['access_token'] === "PRO2017")
       {
         $this->Session->write('access_token_pro', true);
         $this->redirect("/");
