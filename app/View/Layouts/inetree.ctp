@@ -120,13 +120,6 @@
 
       <?php echo $this->fetch('content'); ?>
 
-      <footer>
-        <?php if($this->request->params['controller'] == 'trees' && $this->request->params['action'] == 'view') : ?>
-        <?php else : ?>
-          <?php echo $this->element('footer/main'); ?>
-        <?php endif; ?>
-      </footer>
-
     </div>
 
   <!-- Load script in bottom -->

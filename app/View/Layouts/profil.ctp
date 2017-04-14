@@ -47,8 +47,6 @@
       <?php endif; ?>
 
       <?php echo $this->fetch('content'); ?>
-
-      <?php echo $this->element('footer/main') ?>
     </div>
 
   <!-- Load script in bottom -->
