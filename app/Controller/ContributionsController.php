@@ -530,7 +530,7 @@ class ContributionsController extends AppController {
         $slug = strtr($contribSlug . '.' . $extension, 'áàâäãåçéèêëíìîïñóòôöõúùûüýÿ', 'aaaaaaceeeeiiiinooooouuuuyy');
       }
 
-      if(in_array($extension, array('pdf', 'doc', 'docx')) ){
+      if(in_array($extension, array('pdf', 'doc', 'docx', 'txt')) ){
         move_uploaded_file($this->request->data['Contribution']['path_file']['tmp_name'], $dir->path . DS .$slug);
         $this->Contribution->saveField('path', $slug);
       }
