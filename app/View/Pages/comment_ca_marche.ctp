@@ -17,16 +17,10 @@
           <div class="row">
             <div class="col-sm-12">
               <h3 class="lead">
-                  Les éditions Inédits proposent, en exclusivité, le premier réseau social d’écriture collaborative !
+                  INEDITS vous ouvre un accès privé à sa plateforme d'écriture collaborative.
                 </h3>
               <p class="lead">
-                Nous mettons en ligne un début d’histoire et faisons appel à votre créativité pour écrire la suite !<br/>
-                L’histoire chemine dans plusieurs directions : une arborescence se créé…
-              </p>
-              <p class="lead">
-                Si une histoire vous inspire, proposez une suite !
-
-                Tentez votre chance ! Votre texte sera peut-être mis en ligne, et pourquoi pas… publié ?
+                Un début d'histoire est mis en ligne par l'animateur de votre groupe : à votre tour, venez écrire des suites possibles ! L'histoire chemine dans plusieurs directions, une arborescence se créé...
               </p>
             </div>
           </div>
@@ -51,9 +45,7 @@
                   )
                 ?>
                 <p class="lead">
-                  L’inscription est gratuite. Le formulaire une fois rempli, vous recevrez un mail de confirmation. Cliquez sur le lien afin de valider votre inscription.<br/>
-
-                  Complétez votre profil d’auteur, personnalisez-le, il vous servira ainsi de carte de visite sur le Web !
+                  Complétez votre profil. Le formulaire une fois rempli, vous recevrez un mail de confirmation. Cliquez sur le lien afin de valider votre inscription.
                 </p>
               </div>
             </div>
@@ -68,7 +60,7 @@
                 <!-- <h2 class="featurette-heading">Choisissez l'histoire qui vous inspire !<span class="bubble">2</span></h2> -->
                 <?php
                   echo $this->Html->link(
-                    'Choisissez l\'histoire qui vous inspire !<span class="bubble">2</span>',
+                    'Rendez-vous sur l\'Arbre de votre histoire<span class="bubble">2</span>',
                     array(
                       'controller'  => 'trees',
                       'action'      => 'index',
@@ -80,7 +72,7 @@
                   )
                 ?>
                 <p class="lead">
-                  Chaque début d’histoire donne naissance à un arbre. Explorez nos propositions et choisissez celle qui vous convient !
+                  Cliquez sur le début de l'histoire pour le découvrir, puis, par la suite, sur les différentes branches pour découvrir les contributions des autres.
                 </p>
               </div>
             </div>
@@ -107,25 +99,12 @@
                   )
                 ?>
                 <p class="lead">
-                  Donnez un nom à votre texte, cela permettra de repérer à quelle branche il se rattache. Vous pouvez soit télécharger votre fichier, soit écrire directement en ligne. Attention à respecter les éléments de la contribution précédente pour que l’histoire reste cohérente.<br/>
-
-                  À son tour, votre suite pourra inspirer un autre auteur !
+                  Trouvez-lui un titre. Vous pouvez soit télécharger votre fichier, soit écrire directement en ligne. Attention à respecter les éléments de la contribution précédente pour que l’histoire reste cohérente.<br>
+                  À son tour, votre suite pourra inspirer un autre membre de votre groupe !
                 </p>
               </div>
             </div>
           </div>
-      </div>
-
-      <div class="container register">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="wrapper">
-              <h3>Envie d'écrire ?</h3>
-              <p>Rejoignez la première plateforme d’écriture collaborative lancée par un éditeur</p>
-              <?php echo $this->Html->link('S\'inscrire<i class="fa fa-chevron-right"></i>', array('controller' => 'users', 'action' => 'register'), array('escape' => false, 'class' => 'btn btn-shadow-blue')); ?>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- /END THE FEATURETTES -->
